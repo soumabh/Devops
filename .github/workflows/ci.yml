@@ -1,10 +1,10 @@
-name : End-to-end-test
+name: End-to-end-test
 on: push
-jobs :
+jobs:
   cypress-run:
-    runs-on : ubuntu-22.04
-    steps :
-      - name : checkout
-        users : actions/checkout@v3
-      - name : Cypress run
-        users : cypress-io/github-action@v5
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: cypress run
+        uses: cypress-io/github-action@v5
